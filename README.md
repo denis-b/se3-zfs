@@ -26,7 +26,9 @@ Un NAS tout fait fait bien évidemment l'affaire, pourvu qu'il soit en ZFS
 
 ## Installation
 ### Nouvelle configuration
-L'installation se fait en installant se3-zfs en premier 
+Il est possible d'installer également le système Debian Jessie sur ZFS : https://github.com/zfsonlinux/zfs/wiki/Debian-Jessie-Root-on-ZFS. A reserver aux machines de dev (immense avantage, on peut faire des instantanés directement au niveau du système, et donc ne pas dépendre d'un virtualiseur) 
+
+Pour un serveur Wheezy en production, il vaut mieux faire une installation classique de se3, puis installer ensuite se3-zfs 
 ### Migration d'un serveur existant
 * installation du NAS FreeNAS
 * copie de la clé ssh root@se3 sur root@nas
